@@ -1,6 +1,7 @@
 require 'rubygems' 
 require 'json'
 
-data = ARGV[0]
-puts data
-JSON.parse(data)
+data = open(ARGV[0]).read
+result = JSON.parse(data)
+
+puts result
