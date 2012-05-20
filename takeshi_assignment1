@@ -1,6 +1,7 @@
-# myapp3.rb
+# myapp3.rb 
 require 'rubygems'
 require 'sinatra'
+
 get '/:name' do
-"Welcome, #{params[:name]}."
+  "Welcome, #{params[:name]}."
 end
